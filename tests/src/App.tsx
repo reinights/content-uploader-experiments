@@ -77,7 +77,7 @@ function HtmlOutputPlugin({ onChange }: { onChange: (html: string) => void }) {
 
 function LexicalToolbar({ onAIFormat }: { onAIFormat: () => void }) {
   const [editor] = useLexicalComposerContext();
-
+  console.log(onAIFormat)
   const formatBold = () => {
     editor.dispatchCommand(FORMAT_TEXT_COMMAND, "bold");
   };
